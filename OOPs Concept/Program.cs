@@ -1,4 +1,6 @@
 ﻿using OOPs_Concept.OOPs_Concept;
+using System.Net.NetworkInformation;
+using static OOPs_Concept.Abstraction;
 
 namespace OOPs_Concept
 {
@@ -7,7 +9,7 @@ namespace OOPs_Concept
         static void Main(string[] args)
         {
             Console.WriteLine("Please choose any one program from bellow option");
-            Console.WriteLine("1:Inheritance");
+            Console.WriteLine("1:Inheritance\n2:Abstraction\n3:Polmorphisum");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -23,6 +25,15 @@ namespace OOPs_Concept
                     bike.price = 1000000;
                     bike.VehicleDetails();
                     bike.Start();
+                    break;
+                case 2:
+                    Pig pig = new Pig(); // Create a Pig object
+                    pig.animalSound();  // Call the abstract method
+                    pig.sleep();  // Call the regular method
+                    break;
+                case 3:
+                    Apple obj = new Apple();
+                    obj.PrintName();
                     break;
                 default:
                     Console.WriteLine("Please choose given option");

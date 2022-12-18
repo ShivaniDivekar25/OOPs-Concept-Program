@@ -9,9 +9,5 @@ namespace OOPs_Concept
 {
     internal class Bike:Car
     {
-        public void start()
-        {
-            Console.WriteLine("Bike started");
-        }
     }
 }
