@@ -1,4 +1,5 @@
 ﻿using OOPs_Concept.OOPs_Concept;
+using System;
 using System.Net.NetworkInformation;
 using static OOPs_Concept.Abstraction;
 
@@ -9,7 +10,7 @@ namespace OOPs_Concept
         static void Main(string[] args)
         {
             Console.WriteLine("Please choose any one program from bellow option");
-            Console.WriteLine("1:Inheritance\n2:Abstraction\n3:Polmorphisum\n4:MethodOverriding");
+            Console.WriteLine("1:Inheritance\n2:Abstraction\n3:Polmorphisum\n4:MethodOverriding\n5:Encapsulation");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -40,6 +41,11 @@ namespace OOPs_Concept
                     animal.Run();
                     Dog dog = new Dog();
                     dog.Run();
+                    break;
+                case 5:
+                    Person myObj = new Person();
+                    myObj.Name = "Jenny";
+                    Console.WriteLine(myObj.Name);
                     break;
                 default:
                     Console.WriteLine("Please choose given option");
