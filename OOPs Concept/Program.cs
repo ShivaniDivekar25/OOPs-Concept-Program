@@ -9,7 +9,7 @@ namespace OOPs_Concept
         static void Main(string[] args)
         {
             Console.WriteLine("Please choose any one program from bellow option");
-            Console.WriteLine("1:Inheritance\n2:Abstraction\n3:Polmorphisum");
+            Console.WriteLine("1:Inheritance\n2:Abstraction\n3:Polmorphisum\n4:MethodOverriding");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -34,6 +34,12 @@ namespace OOPs_Concept
                 case 3:
                     Apple obj = new Apple();
                     obj.PrintName();
+                    break;
+                case 4:
+                    Animal animal = new Animal();  // Create a Animal object
+                    animal.Run();
+                    Dog dog = new Dog();
+                    dog.Run();
                     break;
                 default:
                     Console.WriteLine("Please choose given option");
